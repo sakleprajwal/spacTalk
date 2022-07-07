@@ -7,7 +7,7 @@ import { PrivateRoutes } from './PrivateRoutes'
 const RoutingConfigs = () => {
   return (
     <Routes>
-        <Route index element={<Landing/>}/>
+        <Route index element={<Login/>}/>
         <Route path="/" element={<PrivateRoutes/>}>
           <Route path="/feed" element={<Feed/>}/>
           <Route path="/post/:id" element={<SinglePost/>}/>

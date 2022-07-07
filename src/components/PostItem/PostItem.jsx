@@ -78,7 +78,7 @@ const PostItem = ({ post }) => {
   ];
 
   return (
-    <Box padding="1rem" borderRadius="1rem" bg="#242731">
+    <Box padding="1rem" borderRadius="1rem">
       <VStack align="stretch">
         <HStack justify="space-between">
           <Link to={`/people/${post?.username}`}>
@@ -90,7 +90,7 @@ const PostItem = ({ post }) => {
               />
               <VStack align="stretch" spacing="0">
                 <Heading size="sm">{post?.username}</Heading>
-                <Text fontSize="xs" color="#808191">
+                <Text fontSize="xs" color="black">
                   {getTimeDifference(post?.createdAt)}
                 </Text>
               </VStack>
@@ -128,7 +128,7 @@ const PostItem = ({ post }) => {
           ) : null}
         </HStack>
         <Box>
-          <Text fontSize="sm" color="#c5c5c5">
+          <Text fontSize="sm" color="black">
             {post?.content}
           </Text>
         </Box>
